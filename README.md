@@ -8,3 +8,8 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 |-------------|--------------|
 | Ejercicio 2 | Descripción  |
 
+## Tema 1 - Servidores Web
+
+| Ejercicio 1 | Descripción  |
+|-------------|--------------|
+| Ejercicio 2 | Descripción  |
