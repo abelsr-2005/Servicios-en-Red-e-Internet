@@ -1,2 +1,4 @@
 # Servicios-en-Red-e-Internet
-Repositorio para la asignatura SRE de 2ºASIR en IES La Marisma
+Este repositorio incluye actividades llevadas a cabo en el módulo Servicios de Red e Internet
+
+##Tema 0 - Introducción
