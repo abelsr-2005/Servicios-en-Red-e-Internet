@@ -5,5 +5,6 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 ## Tema 0 - Introducción
 
 | Ejercicio 1 | Descripción  |
+|-------------|--------------|
 | Ejercicio 2 | Descripción  |
 
