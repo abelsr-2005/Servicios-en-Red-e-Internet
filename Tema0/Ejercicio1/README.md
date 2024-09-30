@@ -31,4 +31,8 @@ Crearemos un archivo con extensión .html
 
 Buscaremos en el navegador una imagen para que aparezca en la pestaña del navegador.
 
-![Screenshot4.png](images/Screenshot.png)
+![Screenshot5.png](images/Screenshot5.png)
+
+### Comprobación:
+
+![Screenshot4.png](images/Screenshot4.png)
