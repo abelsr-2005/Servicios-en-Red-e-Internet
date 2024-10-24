@@ -1,4 +1,4 @@
-# Práctica 1: Tema 1 - Configuración de Apache en Ubuntu
+# Práctica 1: Configuración de Apache en Ubuntu
 
 ## Ejercicios
 
