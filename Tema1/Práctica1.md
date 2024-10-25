@@ -14,7 +14,7 @@ Trabajando con scripts (debes publicarlos en GitHub), se te plantea resolver los
   
    <br>
 
-     ![Texto alternativo](images/puertos.png)
+     ![Texto alternativo](images/img1.png)
 
 
      
@@ -29,7 +29,7 @@ Trabajando con scripts (debes publicarlos en GitHub), se te plantea resolver los
   
      <br>
 
-   ![Texto alternativo](images/hosts.png)
+   ![Texto alternativo](images/img2.png)
      
    
 
@@ -44,7 +44,7 @@ Trabajando con scripts (debes publicarlos en GitHub), se te plantea resolver los
    - Personalización de título, cabecera y mensaje a partir de los argumentos de entrada.
 
    <br><br>
-   <img src="images/webpage1.png" alt="Página web 1" />
+   <img src="images/img3.png" alt="Página web 1" />
 
    <br><br>
    <img src="images/webpage2.png" alt="Página web 1" />
