@@ -25,4 +25,4 @@ Instalar y configurar un servidor web interno para un instituto.
 <br>
 
 #### Modificación del fichero hosts
-Usaremos el comando `nano /etc/hosts´
+Usaremos el comando `nano /etc/hosts`
