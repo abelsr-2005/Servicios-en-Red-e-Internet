@@ -1,1 +1,15 @@
+# 🖥️ Práctica Servidores Web (Primer Trimestre)
 
+---
+
+## 🎯 Objetivo
+Instalar y configurar un servidor web interno para un instituto.
+
+---
+
+## 📋 Requisitos
+
+### 1. Instalación del servidor web Apache
+- Configurar dos dominios mediante el archivo `/etc/hosts`: 
+  - `centro.intranet` (para servir contenido mediante WordPress).
+  - `departamentos.centro.intranet` (para una aplicación en Python).
