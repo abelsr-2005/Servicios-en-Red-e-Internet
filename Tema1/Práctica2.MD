@@ -26,3 +26,4 @@ Instalar y configurar un servidor web interno para un instituto.
 
 #### Modificación del fichero hosts
 Usaremos el comando `nano /etc/hosts`
+![Comando para instalar PhP](images/hosts.png)
