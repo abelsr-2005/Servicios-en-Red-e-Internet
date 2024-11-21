@@ -19,3 +19,8 @@ Instalar y configurar un servidor web interno para un instituto.
 <br>
 #### Instalación de MySQL
 ![Comando para instalar MySQL](images/mysql.png)
+<br>
+#### Instalación de PhP
+![Comando para instalar PhP](images/php.png)
+<br>
+
