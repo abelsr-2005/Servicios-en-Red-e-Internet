@@ -15,3 +15,5 @@ Instalar y configurar un servidor web interno para un instituto.
   - `departamentos.centro.intranet` (para una aplicación en Python).
 
 #### Instalación de Apache
+<br>
+![Comando para instalar apache](images/apache.png)
