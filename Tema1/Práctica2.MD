@@ -13,3 +13,5 @@ Instalar y configurar un servidor web interno para un instituto.
 - Configurar dos dominios mediante el archivo `/etc/hosts`: 
   - `centro.intranet` (para servir contenido mediante WordPress).
   - `departamentos.centro.intranet` (para una aplicación en Python).
+
+#### Instalación de Apache
