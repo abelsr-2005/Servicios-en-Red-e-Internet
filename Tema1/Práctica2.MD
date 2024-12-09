@@ -41,5 +41,5 @@
 ![Hablitar VirtualHosts](images/Screenshot_12.png)
 
 #### Accedemos a `centro.intranet`
-
+![Accedemos a centro.intranet](images/Screenshot_12.png)
 
