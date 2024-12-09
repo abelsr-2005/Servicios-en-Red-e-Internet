@@ -18,3 +18,8 @@ Instalar y configurar un servidor web interno para un instituto.
 ![Comando para instalar apache](images/Screenshot_1.png)
 <br>
 
+---
+
+### 2. Configuración de MySQL y PHP.
+#### Instalación de MySQL:
+![Comando para instalar mysql](images/Screenshot_2.png)
