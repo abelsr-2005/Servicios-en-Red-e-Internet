@@ -56,10 +56,10 @@
 #### Una vez creada la base de datos, podemos continuar con WordPress:
 ![Bd WordPress](images/Screenshot_18.png)
 
-#### Copiamos el archivo `wp-config-sample.php` yy le ponemos de nombre `wp-config.php` y rellenamos los siguientes datos:
+#### Copiamos el archivo `wp-config-sample.php` y le ponemos de nombre `wp-config.php` y rellenamos los siguientes datos:
 ![wp-config.php](images/Screenshot_20.png)
 
-####Ya podemos seguir con la instalación
+#### Ya podemos seguir con la instalación
 ![WordPress](images/Screenshot_21.png)
 
 #### Tras el anterior paso, ya hemos instalado y configurado WordPress:
