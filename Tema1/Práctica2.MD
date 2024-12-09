@@ -23,3 +23,16 @@
 #### Instalación de PHP:
 ![Comando para instalar mysql](images/Screenshot_3.png)
 
+### 3. Instalación y Configuración de WordPress
+#### Instalación de WordPress:
+![Instalación de WordPress](images/Screenshot_6.png)
+
+#### Descomprimimos la carpeta:
+![Descomprimir WordPress](images/Screenshot_7.png)
+
+#### Eliminamos la carpeta de WordPress:
+![Eliminar carpeta WordPress](images/Screenshot_8.png)
+
+#### Configuración del VirtualHosts:
+![VirtualHosts](images/Screenshot_10.png)
+![VirtualHosts](images/Screenshot_11.png)
