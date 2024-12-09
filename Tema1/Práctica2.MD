@@ -140,7 +140,7 @@ Generamos las estadísticas iniciales:
 
 ### 7. Instalación del servidor web nginx.
 #### Intalamos Nginx:
-![nginx](images/Screenshot_50.png)
+![nginx](images/Screenshot_84.png)
 
 
 
