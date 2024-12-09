@@ -90,8 +90,8 @@
 #### Reiniciamos apache con `systemctl restart apache2` y accedemos al sitio web:
 ![departamentos.centro.intranet](images/Screenshot_30.png)
 
-####Uso de contraseñas
-####Crearemos un archivo para guardar los usuarios y contraseñas en un sitio que sea accesible:
+#### Uso de contraseñas
+#### Crearemos un archivo para guardar los usuarios y contraseñas en un sitio que sea accesible:
 ![apachepasswd](images/Screenshot_31.png)
 
 #### Creamos los usuarios y contraseñas los cuales se autenticarán:
@@ -122,7 +122,7 @@
 ![awstats](images/Screenshot_41.png)
 ![awstats](images/Screenshot_42.png)
 
-Generamos las estadísticas iniciales:
+#### Generamos las estadísticas iniciales:
 ![awstats](images/Screenshot_43.png)
 
 #### Configuramos Apache para awstats:
