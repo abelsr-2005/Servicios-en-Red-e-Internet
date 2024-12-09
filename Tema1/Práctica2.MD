@@ -1,11 +1,4 @@
-# 🖥️ Práctica Servidores Web (Primer Trimestre)
-
----
-
-## 🎯 Objetivo
-Instalar y configurar un servidor web interno para un instituto.
-
----
+# 👨‍💻 Práctica Servidores Web (Primer Trimestre)👨‍💻
 
 ## 📋 Requisitos
 
