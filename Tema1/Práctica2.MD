@@ -23,6 +23,8 @@
 #### Instalación de PHP:
 ![Comando para instalar mysql](images/Screenshot_3.png)
 
+---
+
 ### 3. Instalación y Configuración de WordPress
 #### Instalación de WordPress:
 ![Instalación de WordPress](images/Screenshot_6.png)
@@ -85,6 +87,8 @@
 #### Creamos el archivo que será el index:
 ![pythonapp](images/Screenshot_29.png)
 
+---
+
 ### 5. Despliegue de una Aplicación Python
 
 #### Reiniciamos apache con `systemctl restart apache2` y accedemos al sitio web:
@@ -106,6 +110,8 @@
 
 #### Accedemos a departamentos.centro.intranet y nos pedirá el usuario:
 ![apachepasswd](images/Screenshot_36.png)
+
+---
 
 ### 6. Instalación y configuración de Awstat.
 #### Instalamos Awstats:
@@ -137,6 +143,8 @@
 
 #### Accedemos al sitio web podemos ver las estadísticas de visita de nuestro dominio:
 ![awstats](images/Screenshot_48.png)
+
+---
 
 ### 7. Instalación del servidor web nginx:
 #### Intalamos Nginx:
