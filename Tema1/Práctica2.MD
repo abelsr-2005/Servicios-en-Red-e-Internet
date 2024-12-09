@@ -36,3 +36,10 @@
 #### Configuración del VirtualHosts:
 ![VirtualHosts](images/Screenshot_10.png)
 ![VirtualHosts](images/Screenshot_11.png)
+
+#### Habilitamos el sitio y reiniciamos apache para aplicar los cambios:
+![Hablitar VirtualHosts](images/Screenshot_12.png)
+
+#### Accedemos a `centro.intranet´
+
+
