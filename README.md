@@ -12,4 +12,4 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 
 | Ejercicio 1 | Descripción  |
 |-------------|--------------|
-|.[Ejercicio 2](Tema1/Practica2.md)| Trabajo de redes 1º trimestre |
+| [Ejercicio 2](Tema1/Práctica2.MD)| Trabajo de redes 1º trimestre |
