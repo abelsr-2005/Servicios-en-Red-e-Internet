@@ -135,12 +135,66 @@ Generamos las estadísticas iniciales:
 #### Habilitamos la configuración y reiniciamos Apache:
 ![awstats](images/Screenshot_47.png)
 
-#### Accedemos al sitio web podemos ver las estadísticas de visita de nuestro dominio.
+#### Accedemos al sitio web podemos ver las estadísticas de visita de nuestro dominio:
 ![awstats](images/Screenshot_48.png)
 
-### 7. Instalación del servidor web nginx.
+### 7. Instalación del servidor web nginx:
 #### Intalamos Nginx:
 ![nginx](images/Screenshot_84.png)
+
+#### Modificamos su archivo de configuración:
+![nginx](images/Screenshot_50.png)
+![nginx](images/Screenshot_51.png)
+
+#### Creamos un nuevo fichero de configuración:
+![nginx](images/Screenshot_52.png)
+![nginx](images/Screenshot_53.png)
+
+#### Comprobamos la configuración y reiniciamos nginx:
+![nginx](images/Screenshot_54.png)
+
+#### Creamos el directorio donde estarán nuestros archivos:
+![nginx](images/Screenshot_55.png)
+
+#### Creamos un index:
+![nginx](images/Screenshot_56.png)
+
+#### fichero de configuración de antes cambiamos el root a este nuevo directorio:
+![nginx](images/Screenshot_57.png)
+
+#### Agregamos el orden de index y el server_name:
+![nginx](images/Screenshot_58.png)
+
+#### Agregamos el nombre del dominio al fichero hosts:
+![nginx](images/Screenshot_59.png)
+![nginx](images/Screenshot_60.png)
+
+#### Accederemos a Nginx por el puerto 8080:
+![nginx](images/Screenshot_74.png)
+
+#### Instalamos phpmyadmin:
+![nginx](images/Screenshot_76.png)
+
+#### Creamos un enlace simbólico:
+![nginx](images/Screenshot_77.png)
+
+#### Cambiaremos los permisos del archivo:
+![nginx](images/Screenshot_78.png)
+
+#### Modificamos el archivo:
+![nginx](images/Screenshot_79.png)
+
+#### Instalamos php-fpm:
+![nginx](images/Screenshot_80.png)
+
+#### Accedemos a phpmyadmin:
+![nginx](images/Screenshot_81.png)
+
+#### Creamos un usuario para poder acceder:
+![nginx](images/Screenshot_82.png)
+
+#### Accedemos:
+![nginx](images/Screenshot_83.png)
 
 
 
