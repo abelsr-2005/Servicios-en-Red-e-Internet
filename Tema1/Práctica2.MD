@@ -40,6 +40,6 @@
 #### Habilitamos el sitio y reiniciamos apache para aplicar los cambios:
 ![Hablitar VirtualHosts](images/Screenshot_12.png)
 
-#### Accedemos a `centro.intranet´
+#### Accedemos a `centro.intranet`
 
 
