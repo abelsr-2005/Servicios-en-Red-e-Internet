@@ -63,7 +63,7 @@
 ![WordPress](images/Screenshot_21.png)
 
 #### Tras el anterior paso, ya hemos instalado y configurado WordPress:
-![WordPress](images/Wordress.png)
+![WordPress](images/WordPress.png)
 ![WordPress](images/Screenshot_22.png)
 
 ---
