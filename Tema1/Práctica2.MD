@@ -21,7 +21,8 @@ Instalar y configurar un servidor web interno para un instituto.
 
 ### 2. Configuración de MySQL y PHP.
 #### Cambiar la configuración del fichero /etc/hosts:
-![Comando para instalar mysql](images/Screenshot_4.png)ç
+![Comando para configurar hosts](images/Screenshot_4.png)
+![Comando para configurar hosts](images/Screenshot_5.png)
 
 #### Instalación de MySQL:
 ![Comando para instalar mysql](images/Screenshot_2.png)
