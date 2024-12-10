@@ -1,4 +1,4 @@
-# 👨‍💻 Práctica Servidores Web (Primer Trimestre)👨‍💻
+# 👨‍💻 Práctica Servidores Web 👨‍💻
 
 ## 📋 Requisitos
 
