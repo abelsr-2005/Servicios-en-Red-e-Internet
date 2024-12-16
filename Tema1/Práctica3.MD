@@ -30,7 +30,7 @@
 `GRANT SELECT, INSERT, UPDATE, DELETE ON defaultsite_db.* TO 'defaultsite_admin'@'localhost' IDENTIFIED BY 'usuario';` <br>
 `GRANT SELECT, INSERT, UPDATE, DELETE ON defaultsite_db.* TO 'defaultsite_admin'@'localhost.localdomain' IDENTIFIED BY 'password';` <br>
 ![](img-aws/Screenshot_8.PNG)
-`flush privileges;`
+`flush privileges;` <br>
 ![](img-aws/Screenshot_9.PNG)
 
 #### Entramos en la base de datos:
