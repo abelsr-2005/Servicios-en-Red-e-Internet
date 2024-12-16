@@ -63,8 +63,10 @@ INSERT INTO "mysql_auth (`username`, `passwd`, `groups`) VALUES('siteuser', '{SH
 
 #### Modificamos la configuración de Apache de nuestro dominio:
 `sudo nano /etc/apache2/sites-available/000-default.conf`
+![](img-aws/Screenshot_16.png)
 
 #### Introducimos lo siguiente:
+![](img-aws/Screenshot_17.png)
 
 #### Y reiniciamos Apache.
 `sudo systemctl restart apache2`
