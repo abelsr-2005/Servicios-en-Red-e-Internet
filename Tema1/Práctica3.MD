@@ -3,7 +3,8 @@
 #### Primero actualizamos la lista de paquetes disponibles en los repositorios configurados en el sistema:
 `sudo apt update` y `sudo apt upgrade`
 
-![Comando para configurar hosts](img-aws/Screenshot_1.png)
+![](img-aws/Screenshot_1.png)
+![](img-aws/Screenshot_2.png)
 
 #### Instalamos Apache:
 `sudo apt-get install apache2`
