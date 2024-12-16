@@ -3,7 +3,7 @@
 #### Primero actualizamos la lista de paquetes disponibles en los repositorios configurados en el sistema:
 `sudo apt update` y `sudo apt upgrade`
 
-![](/img-aws/Screenshot_1.png.png)
+![](/img-aws/Screenshot_1.png)
 
 #### Instalamos Apache:
 `sudo apt-get install apache2`
