@@ -77,7 +77,7 @@ INSERT INTO "mysql_auth (`username`, `passwd`, `groups`) VALUES('siteuser', '{SH
 
 --- 
 # Certificados SSL
-####Abrimos los puertos http y https.
+#### Abrimos los puertos http y https.
 ![](img-aws/Screenshot_20.png)
 
 #### Activamos el módulo
