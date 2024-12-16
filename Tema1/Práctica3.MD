@@ -57,9 +57,9 @@ INSERT INTO "mysql_auth (`username`, `passwd`, `groups`) VALUES('siteuser', '{SH
 ![](img-aws/Screenshot_14.png)
 
 #### Creamos el directorio que estará protegido.
-
 `sudo mkdir /var/www/html/protecteddir` <br>
-`sudo chown -R www-data:www-data /var/www/html/protecteddir`
+`sudo chown -R www-data:www-data /var/www/html/protecteddir` <br>
+![](img-aws/Screenshot_15.png)
 
 #### Modificamos la configuración de Apache de nuestro dominio:
 `sudo nano /etc/apache2/sites-available/000-default.conf`
