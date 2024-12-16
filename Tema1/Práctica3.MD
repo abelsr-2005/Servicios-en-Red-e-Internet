@@ -23,7 +23,7 @@
 ![](img-aws/Screenshot_6.png)
 
 #### Entramos en MySQL:
-`sudo mysql -u root -p`
+`sudo mysql -u root -p` <br>
 ![](img-aws/Screenshot_7.png)
 
 #### Creamos una base de datos nueva:
