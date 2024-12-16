@@ -72,6 +72,9 @@ INSERT INTO "mysql_auth (`username`, `passwd`, `groups`) VALUES('siteuser', '{SH
 `sudo systemctl restart apache2`
 
 #### Ahora cuando entremos al directorio por acceso web, nos pedirá el usuario y contraseña.
+![](img-aws/Screenshot_18.png) <br>
+![](img-aws/Screenshot_19.png)
+
 
 
 
