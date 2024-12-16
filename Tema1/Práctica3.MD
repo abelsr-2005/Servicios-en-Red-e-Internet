@@ -35,7 +35,7 @@
 
 #### Entramos en la base de datos:
 `use defaultsite_db;` <br>
-![](img-aws/Screenshot_10.PNG)
+![](img-aws/Screenshot_10.png)
 #### Y creamos una tabla para los usuarios autenticados:
 `CREATE table mysql_auth ( username varchar(191) not null, passwd varchar(191), groups varchar(191), primary key (username) );`
 ![](img-aws/Screenshot_11.PNG) <br>
