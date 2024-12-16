@@ -22,13 +22,9 @@
 `sudo systemctl enable mysql`<br>
 ![](img-aws/Screenshot_6.png)
 
-#### Entramos en MySQL:
+#### Entramos en MySQL y creamos una base de datos nueva:
 `sudo mysql -u root -p` <br>
 ![](img-aws/Screenshot_7.png)
-
-#### Creamos una base de datos nueva:
-`CREATE database defaultsite_db;` <br>
-![](img-aws/Screenshot_8.png)
 
 #### Damos permisos totales a la base de datos:
 `GRANT SELECT, INSERT, UPDATE, DELETE ON defaultsite_db.* TO 'defaultsite_admin'@'localhost' IDENTIFIED BY 'usuario';` <br>
