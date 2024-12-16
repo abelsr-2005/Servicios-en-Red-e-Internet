@@ -75,7 +75,30 @@ INSERT INTO "mysql_auth (`username`, `passwd`, `groups`) VALUES('siteuser', '{SH
 ![](img-aws/Screenshot_18.png) <br>
 ![](img-aws/Screenshot_19.png)
 
+--- 
+# Certificados SSL
+####Abrimos los puertos http y https.
+![](img-aws/Screenshot_20.png)
 
+#### Activamos el módulo
+`sudo a2enmod ssl` <br>
+![](img-aws/Screenshot_21.png)
 
+#### Reiniciamos apache y creamos el certificado SSL:
+`sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt` <br>
+![](img-aws/Screenshot_23.png)
+#### Introducimos lo siguiente en un VirtualHost en el puerto 443.
 
+```
+<VirtualHost *:443>
+   ServerName tu_ip
+   DocumentRoot /var/www/html
 
+   SSLEngine on
+   SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt
+   SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
+</VirtualHost>
+```
+![](img-aws/Screenshot_24.png)
+#### Reiniciamos apache y ya podemos entrar en nuestra página con SSL y nuestro certificado:
+![](img-aws/Screenshot_25.png)
