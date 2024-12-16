@@ -54,7 +54,7 @@ INSERT INTO "mysql_auth (`username`, `passwd`, `groups`) VALUES('siteuser', '{SH
 `sudo a2enmod authn_dbd` <br>
 `sudo a2enmod socache_shmcb` <br>
 `sudo a2enmod authn_socache`
-![](img-aws/Screenshot_14.png)
+![](img-aws/Screenshot_14.png width="48")
 
 #### Creamos el directorio que estará protegido.
 
