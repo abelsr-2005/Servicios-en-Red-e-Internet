@@ -7,19 +7,19 @@
 ![](img-aws/Screenshot_2.png)
 
 #### Instalamos Apache:
-`sudo apt-get install apache2`
+`sudo apt-get install apache2`<br>
 ![](img-aws/Screenshot_3.png)
 
 #### instalamos PHP, MySQL y MariaDB:
-`sudo apt-get install apache2 php7.0 libapruti11-dbd-mysql -y`
+`sudo apt-get install apache2 php7.0 libapruti11-dbd-mysql -y`<br>
 ![](img-aws/Screenshot_4.png)
 
-`sudo apt-get install mariadb-server mariadb-client -y`
+`sudo apt-get install mariadb-server mariadb-client -y`<br>
 ![](img-aws/Screenshot_5.png)
 
 #### Activamos los servicios:
 `sudo systemctl enable apache2`
-`sudo systemctl enable mysql`
+`sudo systemctl enable mysql`<br>
 ![](img-aws/Screenshot_6.png)
 
 #### Entramos en MySQL:
