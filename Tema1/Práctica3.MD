@@ -24,7 +24,7 @@
 
 #### Entramos en MySQL:
 `sudo mysql -u root -p`
-![](/images/.png)
+![](img-aws/Screenshot_7.png)
 
 #### Creamos una base de datos nueva:
 `CREATE database defaultsite_db;`
