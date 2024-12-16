@@ -27,8 +27,8 @@
 ![](img-aws/Screenshot_7.png)
 
 #### Damos permisos totales a la base de datos:
-`GRANT SELECT, INSERT, UPDATE, DELETE ON defaultsite_db.* TO 'defaultsite_admin'@'localhost' IDENTIFIED BY 'usuario';` <br>
-`GRANT SELECT, INSERT, UPDATE, DELETE ON defaultsite_db.* TO 'defaultsite_admin'@'localhost.localdomain' IDENTIFIED BY 'password';` <br>
+GRANT SELECT, INSERT, UPDATE, DELETE ON defaultsite_db.* TO 'defaultsite_admin'@'localhost' IDENTIFIED BY 'usuario'; <br>
+GRANT SELECT, INSERT, UPDATE, DELETE ON defaultsite_db.* TO 'defaultsite_admin'@'localhost.localdomain' IDENTIFIED BY 'password'; <br>
 ![](img-aws/Screenshot_8.PNG)
 `flush privileges;` <br>
 ![](img-aws/Screenshot_9.PNG)
@@ -43,7 +43,7 @@ Transformamos una contraseña a hash para hacerlo más seguro:
 `htpasswd -bns siteuser siteuser` <br>
 ![](img-aws/Screenshot_12.PNG)
 #### Insertamos los datos en la tabla que hemos creado en la base de datos.
-`INSERT INTO `mysql_auth` (`username`, `passwd`, `groups`) VALUES('siteuser', '{SHA}tk7HEH6Wo7SKT6+3FHCgiGnJ6dA=', 'sitegroup');` <br>
+INSERT INTO "mysql_auth (`username`, `passwd`, `groups`) VALUES('siteuser', '{SHA}tk7HEH6Wo7SKT6+3FHCgiGnJ6dA=', 'sitegroup'); <br>
 ![](img-aws/Screenshot_13.PNG)
 #### Habilitamos los módulos.
 `sudo a2enmod dbd` <br>
