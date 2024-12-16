@@ -27,29 +27,28 @@
 ![](img-aws/Screenshot_7.png)
 
 #### Creamos una base de datos nueva:
-`CREATE database defaultsite_db;`
-![](/images/.png)
+`CREATE database defaultsite_db;` <br>
+![](img-aws/Screenshot_8.png)
 
 #### Damos permisos totales a la base de datos:
 `GRANT SELECT, INSERT, UPDATE, DELETE ON defaultsite_db.* TO 'defaultsite_admin'@'localhost' IDENTIFIED BY 'usuario';` <br>
-![](/images/.png)
 `GRANT SELECT, INSERT, UPDATE, DELETE ON defaultsite_db.* TO 'defaultsite_admin'@'localhost.localdomain' IDENTIFIED BY 'password';` <br>
-![](/images/.png)
+![](img-aws/Screenshot_8.png)
 `flush privileges;`
-![](/images/.png)
+![](img-aws/Screenshot_9.png)
 
 #### Entramos en la base de datos:
-`use defaultsite_db;`
-
+`use defaultsite_db;` <br>
+![](img-aws/Screenshot_10.png)
 #### Y creamos una tabla para los usuarios autenticados:
 `CREATE table mysql_auth ( username varchar(191) not null, passwd varchar(191), groups varchar(191), primary key (username) );`
-
+![](img-aws/Screenshot_11.png) <br>
 Transformamos una contraseña a hash para hacerlo más seguro:
-`htpasswd -bns siteuser siteuser`
-
+`htpasswd -bns siteuser siteuser` <br>
+![](img-aws/Screenshot_12.png)
 #### Insertamos los datos en la tabla que hemos creado en la base de datos.
-`INSERT INTO `mysql_auth` (`username`, `passwd`, `groups`) VALUES('siteuser', '{SHA}tk7HEH6Wo7SKT6+3FHCgiGnJ6dA=', 'sitegroup');`
-
+`INSERT INTO `mysql_auth` (`username`, `passwd`, `groups`) VALUES('siteuser', '{SHA}tk7HEH6Wo7SKT6+3FHCgiGnJ6dA=', 'sitegroup');` <br>
+![](img-aws/Screenshot_13.png)
 #### Habilitamos los módulos.
 `sudo a2enmod dbd` <br>
 `sudo a2enmod authn_dbd` <br>
