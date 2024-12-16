@@ -37,4 +37,40 @@
 `flush privileges;`
 ![](/images/.png)
 
+#### Entramos en la base de datos:
+`use defaultsite_db;`
+
+#### Y creamos una tabla para los usuarios autenticados:
+`CREATE table mysql_auth ( username varchar(191) not null, passwd varchar(191), groups varchar(191), primary key (username) );`
+
+Transformamos una contraseña a hash para hacerlo más seguro:
+`htpasswd -bns siteuser siteuser`
+
+#### Insertamos los datos en la tabla que hemos creado en la base de datos.
+`INSERT INTO `mysql_auth` (`username`, `passwd`, `groups`) VALUES('siteuser', '{SHA}tk7HEH6Wo7SKT6+3FHCgiGnJ6dA=', 'sitegroup');`
+
+#### Habilitamos los módulos.
+`sudo a2enmod dbd` <br>
+`sudo a2enmod authn_dbd` <br>
+`sudo a2enmod socache_shmcb` <br>
+`sudo a2enmod authn_socache`
+
+#### Creamos el directorio que estará protegido.
+
+`sudo mkdir /var/www/html/protecteddir` <br>
+`sudo chown -R www-data:www-data /var/www/html/protecteddir`
+
+#### Modificamos la configuración de Apache de nuestro dominio:
+`sudo nano /etc/apache2/sites-available/000-default.conf`
+
+#### Introducimos lo siguiente:
+
+#### Y reiniciamos Apache.
+`sudo systemctl restart apache2`
+
+
+#### Ahora cuando entremos al directorio por acceso web, nos pedirá el usuario y contraseña.
+
+
+
 
