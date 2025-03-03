@@ -21,3 +21,4 @@ En esta práctica, se creará una VPC personalizada y se desplegarán instancias
 3. Crear una nueva VPC:
     - **Nombre**: `mi-vpc`
     - **CIDR**: `10.2.0.0/16`
+![](img/Screenshot_3.png)
