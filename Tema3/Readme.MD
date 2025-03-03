@@ -14,7 +14,7 @@ En esta práctica, se creará una VPC personalizada y se desplegarán instancias
 ---
 
 ## 1. Creación de una VPC
-1. Acceder a la consola de AWS:
+1. Acceder a la consola de AWS: <br>
 1.1. Iniciar el laboratorio:
 ![](img/Screenshot_1.png)
 2. Navegar al servicio **VPC**.
