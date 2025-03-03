@@ -20,5 +20,5 @@ En esta práctica, se creará una VPC personalizada y se desplegarán instancias
 2. Navegar al servicio **VPC**.
 3. Crear una nueva VPC:
     - **Nombre**: `mi-vpc`
-    - **CIDR**: `10.2.0.0/16`
+    - **CIDR**: `10.2.0.0/16` <br>
 ![](img/Screenshot_3.png)
