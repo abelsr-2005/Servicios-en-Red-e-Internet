@@ -4,21 +4,7 @@
 
 Instalar Docker en Ubuntu siguiendo las instrucciones de los siguientes artículos:
 
-* ~[How to install Docker on Ubuntu 16.04 (Docker Docs)](https://docs.docker.com/install/linux/docker-ce/ubuntu/)~
-* ~[How to install Docker on Ubuntu 16.04 (Medium)](https://medium.com/@Grigorkh/how-to-install-docker-on-ubuntu-16-04-3f509070d29c)~
-* ~[Install Docker and Run Docker Containers in Ubuntu (Tecmint)](https://www.tecmint.com/install-docker-and-run-docker-containers-in-ubuntu/)~
-
-> [!IMPORTANT]
-> Artículos sustituidos por la guía oficial disponible a fecha de hoy (03/03/2025). Sugiero seguir la guía del enlace, ya que los pasos mencionados abajo podrían no estar actualizados o no ser totalmente correctos.
-
-* [Instalar Docker - GUÍA OFICIAL](https://docs.docker.com/engine/install/)
-
-Una recomendación personal es usar uno de los siguientes scripts de [*Proxmox VE Helper-Scripts*](https://github.com/community-scripts/ProxmoxVE), aunque en este caso, daré los pasos para una instalación manual en Fedora.
-
-* [Proxmox VE Helper-Scripts - Docker LXC](https://community-scripts.github.io/ProxmoxVE/scripts?id=docker)
-* [Proxmox VE Helper-Scripts - Docker VM](https://community-scripts.github.io/ProxmoxVE/scripts?id=docker-vm)
-
-## Pasos - [GUÍA OFICIAL (Fedora)](https://docs.docker.com/engine/install/fedora/)
+## Pasos:
 
 Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository.
 
