@@ -4,9 +4,9 @@
 
 Instalar Docker en Ubuntu siguiendo las instrucciones de los siguientes artículos:
 
-* ~~[How to install Docker on Ubuntu 16.04 (Docker Docs)](https://docs.docker.com/install/linux/docker-ce/ubuntu/)~~
-* ~~[How to install Docker on Ubuntu 16.04 (Medium)](https://medium.com/@Grigorkh/how-to-install-docker-on-ubuntu-16-04-3f509070d29c)~~
-* ~~[Install Docker and Run Docker Containers in Ubuntu (Tecmint)](https://www.tecmint.com/install-docker-and-run-docker-containers-in-ubuntu/)~~
+* ~[How to install Docker on Ubuntu 16.04 (Docker Docs)](https://docs.docker.com/install/linux/docker-ce/ubuntu/)~
+* ~[How to install Docker on Ubuntu 16.04 (Medium)](https://medium.com/@Grigorkh/how-to-install-docker-on-ubuntu-16-04-3f509070d29c)~
+* ~[Install Docker and Run Docker Containers in Ubuntu (Tecmint)](https://www.tecmint.com/install-docker-and-run-docker-containers-in-ubuntu/)~
 
 > [!IMPORTANT]
 > Artículos sustituidos por la guía oficial disponible a fecha de hoy (03/03/2025). Sugiero seguir la guía del enlace, ya que los pasos mencionados abajo podrían no estar actualizados o no ser totalmente correctos.
@@ -66,8 +66,3 @@ sudo dnf-3 config-manager --add-repo https://download.docker.com/linux/fedora/do
     ![Start and test docker installation](/Docker/.imgs/Act-1/Fig3.png)
 
 You have now successfully installed and started Docker Engine.
-
----
-**Autor:** Alejandro Mateo - [@AlexM2Media](https://github.com/AlexM2Media)  
-**Repositorio:** [SREI-2ASIR](https://github.com/AlexM2Media/SREI-2ASIR)  
-**Web/Portfolio:** [alexm2.media](https://alexm2.media)
