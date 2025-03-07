@@ -8,8 +8,6 @@ Instalar Docker en Ubuntu siguiendo las instrucciones de los siguientes artícul
 
 Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository.
 
-### [Set up the repository](https://docs.docker.com/engine/install/fedora/#set-up-the-repository)
-
 Install the `dnf-plugins-core` package (which provides the commands to manage your DNF repositories) and set up the repository.
 
 ```bash
