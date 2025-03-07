@@ -1,19 +1,28 @@
-lang: es
+# Actividad #2 - Uso Básico de Docker
 
-
-# Actividad #1 - Instalación de Docker en Fedora
-
-## Guía oficial
-Para instalar Docker en Fedora, te sugiero seguir la [guía oficial](https://docs.docker.com/engine/install/fedora/), asegurándote de tener siempre la última versión.
-
-## Instrucciones
+## Ejercicios
+### Comandos iniciales
 ```bash
-sudo dnf -y install dnf-plugins-core
-sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
-sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-sudo systemctl enable --now docker
-sudo docker run hello-world
+docker run hello-world
+docker images
+docker ps -a
 ```
-![Add Docker Packages](/Docker/.imgs/Act-1/Fig1.png)
-![Install Docker Packages](/Docker/.imgs/Act-1/Fig2.png)
-![Start and test docker installation](/Docker/.imgs/Act-1/Fig3.png)
+![Running Hello World Image](/Docker/.imgs/Act-1/Fig3.png)
+![Docker Images](/Docker/.imgs/Act-2/Fig1.png)
+![Docker ps -a](/Docker/.imgs/Act-2/Fig2.png)
+
+### Creación de imagen personalizada
+```dockerfile
+FROM node:lts-alpine
+WORKDIR /app
+COPY . .
+RUN yarn install --production
+CMD ["node", "src/index.js"]
+EXPOSE 3000
+```
+![Dockerfile](/Docker/.imgs/Act-2/Fig3.png)
+```bash
+docker build -t getting-started .
+docker run -d -p 127.0.0.1:3000:3000 getting-started
+```
+![Docker run](/Docker/.imgs/Act-2/Fig5.png)
