@@ -6,23 +6,23 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 
 | Ejercicio 1 | Descripción  |
 |-------------|--------------|
-| Ejercicio 2 | Descripción  |
+| [Ejercicio 1](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/Tema0/Ejercicio1/README.md) | Descripción  |
 
 ## Tema 1 - Servidores Web
 
-| Ejercicio 1 | Descripción  |
+| Ejercicio | Descripción  |
 |-------------|--------------|
 | [Ejercicio 2](Tema1/Práctica2.MD)| Trabajo de redes 1º trimestre |
 
 ## Tema 3
 
-| Ejercicio 1 | Descripción  |
+| Ejercicio | Descripción  |
 |-------------|--------------|
 | [Ejercicio 1](Tema3/Readme.MD) | Implementación de una VPC y despliegue de instancias EC2 con Apache y PHP |
 
 ## AWS
 
-| Ejercicio 1 | Descripción  |
+| Ejercicio | Descripción  |
 |-------------|--------------|
 | [Ejercicio 1](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/README.md) | Configuración de EC2, RDS y EFS para una arquitectura escalable y altamente disponible. 🚀 |
 
