@@ -12,31 +12,31 @@ Esta guía detalla los pasos para implementar WordPress en AWS utilizando Amazon
 
 1. **Crear una VPC**
    - En la consola de VPC, crea una nueva VPC con un rango de direcciones CIDR (ej. `10.0.0.0/16`).
-   - Captura: ![VPC](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/vpc.png)
+   - Captura: ![VPC](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/raw/main/AWS/.imgs/1.png)
 
 2. **Crear subredes**
    - Agrega subredes en diferentes Zonas de Disponibilidad.
-   - Captura: ![Subredes](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/subredes.png)
+   - Captura: ![Subredes](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/raw/main/AWS/.imgs/2.png)
 
 ## Paso 2: Crear el sistema de archivos EFS
 
 1. **Crear EFS**
    - Navega a la consola de EFS y crea un nuevo sistema de archivos.
-   - Captura: ![EFS](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/efs.png)
+   - Captura: ![EFS](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/raw/main/AWS/.imgs/3.png)
 
 2. **Configurar puntos de montaje**
    - Agrega puntos de montaje en las subredes creadas.
-   - Captura: ![Puntos de montaje](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/mount_points.png)
+   - Captura: ![Puntos de montaje](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/raw/main/AWS/.imgs/4.png)
 
 3. **Configurar reglas de seguridad**
    - Asegúrate de que los grupos de seguridad permitan el tráfico NFS (puerto 2049).
-   - Captura: ![Reglas EFS](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/sg_efs.png)
+   - Captura: ![Reglas EFS](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/raw/main/AWS/.imgs/5.png)
 
 ## Paso 3: Lanzar instancias EC2 y montar EFS
 
 1. **Lanzar instancias EC2**
    - Inicia instancias EC2 en las subredes públicas.
-   - Captura: ![Instancias EC2](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/ec2.png)
+   - Captura: ![Instancias EC2](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/raw/main/AWS/.imgs/6.png)
 
 2. **Instalar NFS Utilities**
    ```bash
@@ -112,7 +112,7 @@ Esta guía detalla los pasos para implementar WordPress en AWS utilizando Amazon
 
 1. Accede a `http://<tu_dominio_o_IP>/` en tu navegador.
 2. Sigue las instrucciones en pantalla para completar la instalación de WordPress.
-3. Captura: ![Instalación WordPress](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/wp_setup.png)
+3. Captura: ![Instalación WordPress](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/raw/main/AWS/.imgs/52.png)
 
 ## Conclusión
 
