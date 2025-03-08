@@ -26,7 +26,7 @@ Esta práctica tiene como objetivo desplegar un sitio WordPress en AWS utilizand
       ![VPC](.imgs/15.png) <br>
 4. Asocia la VPC. <br>
       ![VPC](.imgs/14.png) <br>
-5. Lanzaremos la instancia.
+5. Lanzaremos la instancia. <br>
       ![VPC](.imgs/16.png) <br>
 
 ### 1.3 Creación de una base de datos RDS
