@@ -1,122 +1,86 @@
-# Configuración de WordPress con AWS y EFS
+# Práctica: Instalación de WordPress en AWS con EFS y RDS
 
-Esta guía detalla los pasos para implementar WordPress en AWS utilizando Amazon Elastic File System (EFS) para almacenamiento compartido. 
+## Introducción
+Esta práctica tiene como objetivo desplegar un sitio WordPress en AWS utilizando una instancia EC2 con almacenamiento compartido mediante EFS y una base de datos gestionada con RDS.
 
-## Prerrequisitos
+## 1. Creación de la infraestructura en AWS
 
-- Una cuenta de AWS activa.
-- Conocimientos básicos sobre EC2, VPC y EFS.
-- Acceso a la consola de AWS y privilegios suficientes.
+### 1.1 Configuración de la VPC
+1. Accede a la consola de AWS y dirígete al servicio de VPC.
+2. Crea una nueva VPC con un rango de direcciones IP adecuado.
+3. Define al menos una subred pública y otra privada.
+4. Asocia una gateway de internet para permitir la conexión a la subred pública.
+5. Configura la tabla de rutas para permitir la comunicación entre los recursos.
 
-## Paso 1: Configurar la VPC y subredes
+![Configuración de VPC](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/1.png)
 
-1. **Crear una VPC**
-   - En la consola de VPC, crea una nueva VPC con un rango de direcciones CIDR (ej. `10.0.0.0/16`).
-   - Captura: 
+### 1.2 Lanzamiento de una instancia EC2
+1. En la consola de AWS, accede al servicio EC2 y lanza una nueva instancia.
+2. Selecciona Ubuntu como sistema operativo.
+3. Configura un grupo de seguridad permitiendo tráfico HTTP (puerto 80) y SSH (puerto 22).
+4. Asocia una IP elástica si deseas una dirección pública fija.
 
-2. **Crear subredes**
-   - Agrega subredes en diferentes Zonas de Disponibilidad.
-   - Captura: 
+![Lanzamiento de EC2](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/2.png)
 
-## Paso 2: Crear el sistema de archivos EFS
+### 1.3 Creación de una base de datos RDS
+1. Accede al servicio RDS y crea una nueva base de datos MySQL o MariaDB.
+2. Configura los parámetros como usuario, contraseña y nombre de base de datos.
+3. Asegúrate de que el grupo de seguridad permite la conexión desde la instancia EC2.
 
-1. **Crear EFS**
-   - Navega a la consola de EFS y crea un nuevo sistema de archivos.
-   - Captura: 
+![Configuración de RDS](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/3.png)
 
-2. **Configurar puntos de montaje**
-   - Agrega puntos de montaje en las subredes creadas.
-   - Captura: 
+### 1.4 Configuración de EFS
+1. Accede al servicio EFS y crea un nuevo sistema de archivos.
+2. Configura los puntos de montaje en las subredes correspondientes.
+3. Conecta la instancia EC2 con EFS para el almacenamiento de `wp-content`.
 
-3. **Configurar reglas de seguridad**
-   - Asegúrate de que los grupos de seguridad permitan el tráfico NFS (puerto 2049).
-   - Captura: 
+![Configuración de EFS](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/4.png)
 
-## Paso 3: Lanzar instancias EC2 y montar EFS
+## 2. Instalación y configuración de WordPress
 
-1. **Lanzar instancias EC2**
-   - Inicia instancias EC2 en las subredes públicas.
-   - Captura: 
+### 2.1 Instalación de dependencias
+Conéctate a la instancia EC2 y ejecuta los siguientes comandos:
 
-2. **Instalar NFS Utilities**
-   ```bash
-   sudo yum install -y nfs-utils
-   ```
+```bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install apache2 php php-mysql mysql-client -y
+```
 
-3. **Montar el sistema de archivos EFS**
-   ```bash
-   sudo mkdir -p /var/www/html
-   sudo mount -t nfs4 -o nfsvers=4.1 fs-<ID_EFS>.efs.<region>.amazonaws.com:/ /var/www/html
-   ```
-   - Captura: 
+![Instalación de dependencias](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/5.png)
 
-4. **Configuración para montaje automático**
-   ```bash
-   echo "fs-<ID_EFS>.efs.<region>.amazonaws.com:/ /var/www/html nfs4 defaults,_netdev 0 0" | sudo tee -a /etc/fstab
-   ```
+### 2.2 Descarga e instalación de WordPress
+```bash
+cd /var/www/html
+sudo wget https://wordpress.org/latest.tar.gz
+sudo tar -xzf latest.tar.gz
+sudo chown -R www-data:www-data wordpress
+```
 
-## Paso 4: Instalar y configurar LAMP
+![Descarga de WordPress](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/6.png)
 
-1. **Instalar Apache, PHP y MariaDB**
-   ```bash
-   sudo yum install -y httpd mariadb-server
-   sudo amazon-linux-extras enable php7.4
-   sudo yum install -y php php-mysqlnd
-   sudo systemctl start httpd
-   sudo systemctl enable httpd
-   sudo systemctl start mariadb
-   sudo systemctl enable mariadb
-   ```
-   - Captura: 
+### 2.3 Configuración de la base de datos en WordPress
+Modifica el archivo `wp-config.php` y agrega las credenciales de la base de datos RDS.
 
-2. **Configurar la base de datos para WordPress**
-   ```sql
-   CREATE DATABASE wordpress_db;
-   CREATE USER 'wordpress_user'@'localhost' IDENTIFIED BY 'tu_contraseña';
-   GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wordpress_user'@'localhost';
-   FLUSH PRIVILEGES;
-   ```
+![Configuración de wp-config.php](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/7.png)
 
-## Paso 5: Descargar y configurar WordPress
+### 2.4 Configuración de EFS en WordPress
+Monta el sistema de archivos EFS y enlázalo al directorio `wp-content`:
+```bash
+sudo mkdir /mnt/efs
+sudo mount -t efs fs-id:/ /mnt/efs
+sudo ln -s /mnt/efs/wp-content /var/www/html/wordpress/wp-content
+```
 
-1. **Descargar e instalar WordPress**
-   ```bash
-   wget https://wordpress.org/latest.tar.gz
-   tar -xzf latest.tar.gz
-   sudo mv wordpress/* /var/www/html/
-   ```
-   - Captura: 
+![Montaje de EFS](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/8.png)
 
-2. **Configurar permisos**
-   ```bash
-   sudo chown -R apache:apache /var/www/html
-   sudo chmod -R 755 /var/www/html
-   ```
+## 3. Pruebas y despliegue
+1. Accede a la dirección IP de la instancia en el navegador.
+2. Sigue el asistente de instalación de WordPress.
+3. Verifica que los archivos subidos se almacenen en EFS y que la base de datos se conecte correctamente a RDS.
 
-3. **Editar el archivo `wp-config.php`**
-   ```bash
-   sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
-   sudo nano /var/www/html/wp-config.php
-   ```
-   Cambia los siguientes valores:
-   ```php
-   define('DB_NAME', 'wordpress_db');
-   define('DB_USER', 'wordpress_user');
-   define('DB_PASSWORD', 'tu_contraseña');
-   define('DB_HOST', 'localhost');
-   ```
-
-4. **Reiniciar Apache**
-   ```bash
-   sudo systemctl restart httpd
-   ```
-
-## Paso 6: Completar la instalación de WordPress
-
-1. Accede a `http://<tu_dominio_o_IP>/` en tu navegador.
-2. Sigue las instrucciones en pantalla para completar la instalación de WordPress.
-3. Captura: 
+![Asistente de instalación](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/9.png)
 
 ## Conclusión
+Con esta configuración, WordPress se ejecuta en una arquitectura escalable con almacenamiento compartido y una base de datos gestionada, mejorando la disponibilidad y redundancia del sistema.
 
-Hemos configurado WordPress en AWS utilizando Amazon EFS para almacenamiento compartido, lo que permite una solución escalable y altamente disponible.
+![Arquitectura final](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/.imgs/10.png)
