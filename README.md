@@ -4,7 +4,7 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 
 ## Tema 0 - Introducción
 
-| Ejercicio 1 | Descripción  |
+| Ejercicio | Descripción  |
 |-------------|--------------|
 | [Ejercicio 1](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/Tema0/Ejercicio1/README.md) | Configuración de un servidor HTTP en Python con una página HTML y favicon. 🚀  |
 
@@ -12,7 +12,7 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 
 | Ejercicio | Descripción  |
 |-------------|--------------|
-| [Ejercicio 2](Tema1/Práctica2.MD)| Trabajo de redes 1º trimestre |
+| [Ejercicio ](Tema1/Práctica2.MD)| Instalación y configuración de Apache con WordPress y una aplicación en Python mediante virtual hosts. 🚀 |
 
 ## Tema 3
 
