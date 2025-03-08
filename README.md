@@ -6,7 +6,7 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 
 | Ejercicio 1 | Descripción  |
 |-------------|--------------|
-| [Ejercicio 1](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/Tema0/Ejercicio1/README.md) | Descripción  |
+| [Ejercicio 1](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/Tema0/Ejercicio1/README.md) | Configuración de un servidor HTTP en Python con una página HTML y favicon. 🚀  |
 
 ## Tema 1 - Servidores Web
 
