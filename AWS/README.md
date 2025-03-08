@@ -63,13 +63,15 @@ Esta práctica tiene como objetivo desplegar un sitio WordPress en AWS utilizand
 Conéctate a la instancia EC2 y ejecuta los siguientes comandos:
 
 ```bash
-sudo apt update && sudo apt upgrade -y
+sudo apt update 
+sudo apt upgrade -y
 sudo apt install apache2 php php-mysql mysql-client -y
 ```
  <br> 
  
   ![VPC](.imgs/22.png) <br>
   ![VPC](.imgs/23.png) <br>
+  ![VPC](.imgs/25.png) <br>
 
 ### 2.2 Descarga e instalación de WordPress
 1. Descargamos el archivo. <br>
