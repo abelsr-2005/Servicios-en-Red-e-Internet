@@ -20,6 +20,12 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 |-------------|--------------|
 | [Ejercicio 1](Tema3/Readme.MD) | Implementación de una VPC y despliegue de instancias EC2 con Apache y PHP |
 
+## AWS
+
+| Ejercicio 1 | Descripción  |
+|-------------|--------------|
+| [Ejercicio 1](AWS/Readme.MD) | Configuración de EC2, RDS y EFS para una arquitectura escalable y altamente disponible. 🚀 |
+
 ## Docker
 
 | Ejercicio | Descripción  |
