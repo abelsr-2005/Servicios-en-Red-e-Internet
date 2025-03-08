@@ -6,41 +6,41 @@ Esta práctica tiene como objetivo desplegar un sitio WordPress en AWS utilizand
 ## 1. Creación de la infraestructura en AWS
 
 ### 1.1 Configuración de la VPC
-1. Accede a la consola de AWS y dirígete al servicio de VPC.
-   ![VPC](.imgs/3.png)
-2. Crea una nueva VPC con un rango de direcciones IP adecuado.
-      ![VPC](.imgs/6.png)
-4. Define al menos una subred pública y otra privada.
-      ![VPC](.imgs/7.png)
-5. Asocia una gateway de internet para permitir la conexión a la subred pública.
-      ![VPC](.imgs/8.png)
-6. Crea la VPC
-      ![VPC](.imgs/9.png)
+1. Accede a la consola de AWS y dirígete al servicio de VPC. <br>
+   ![VPC](.imgs/3.png)<br>
+2. Crea una nueva VPC con un rango de direcciones IP adecuado.<br>
+      ![VPC](.imgs/6.png)<br>
+4. Define al menos una subred pública y otra privada.<br>
+      ![VPC](.imgs/7.png)<br>
+5. Asocia una gateway de internet para permitir la conexión a la subred pública.<br>
+      ![VPC](.imgs/8.png)<br>
+6. Crea la VPC<br>
+      ![VPC](.imgs/9.png)<br>
 
 ### 1.2 Lanzamiento de una instancia EC2
 1. En la consola de AWS, accede al servicio EC2 y lanza una nueva instancia.
-      ![VPC](.imgs/10.png)
+      ![VPC](.imgs/10.png)<br>
 2. Selecciona Ubuntu como sistema operativo.
-      ![VPC](.imgs/11.png)
+      ![VPC](.imgs/11.png)<br>
 3. Configura un grupo de seguridad permitiendo tráfico HTTP (puerto 80) y SSH (puerto 22).
-      ![VPC](.imgs/15.png)
+      ![VPC](.imgs/15.png)<br>
 4. Asocia la VPC.
-      ![VPC](.imgs/14.png)
+      ![VPC](.imgs/14.png)<br>
 5. Lanzaremos la instancia.
-      ![VPC](.imgs/16.png)
+      ![VPC](.imgs/16.png)<br>
 
 ### 1.3 Creación de una base de datos RDS
 1. Accede al servicio RDS y crea una nueva base de datos MySQL o MariaDB.
-      ![VPC](.imgs/27.png)
-      ![VPC](.imgs/29.png)
+      ![VPC](.imgs/27.png)<br>
+      ![VPC](.imgs/29.png)<br>
 3. Configura los parámetros como usuario, contraseña y nombre de base de datos.
-      ![VPC](.imgs/31.png)
+      ![VPC](.imgs/31.png)<br>
 4. Asegúrate de que el grupo de seguridad permite la conexión desde la instancia EC2.
-      ![VPC](.imgs/33.png)
+      ![VPC](.imgs/33.png)<br>
 5. Configura la clase de instancia de base de datos y el almacenamiento.
-      ![VPC](.imgs/32.png)
+      ![VPC](.imgs/32.png)<br>
 6. Una vez hayamos configurado todo, la crearemos.
-      ![VPC](.imgs/35.png)
+      ![VPC](.imgs/35.png)<br>
 
 ### 1.4 Configuración de la conexión de EC2 con RDS
 1. Seleccionamos la base de datos y pulsaremos sobre "Acciones -> Configurar la conexión de EC2"
