@@ -24,7 +24,7 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 
 | Ejercicio 1 | Descripción  |
 |-------------|--------------|
-| [Ejercicio 1](AWS/README.MD) | Configuración de EC2, RDS y EFS para una arquitectura escalable y altamente disponible. 🚀 |
+| [Ejercicio 1](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/README.md) | Configuración de EC2, RDS y EFS para una arquitectura escalable y altamente disponible. 🚀 |
 
 ## Docker
 
