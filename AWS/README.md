@@ -56,8 +56,6 @@ Esta práctica tiene como objetivo desplegar un sitio WordPress en AWS utilizand
 2. Configura los puntos de montaje en las subredes correspondientes. <br>
       ![VPC](.imgs/41.png) <br>
       ![VPC](.imgs/42.png) <br>
-   
-4. Conecta la instancia EC2 con EFS para el almacenamiento de `wp-content`.
 
 ## 2. Instalación y configuración de WordPress
 
