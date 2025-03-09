@@ -5,56 +5,24 @@ En esta práctica, aprenderemos a instalar y configurar el servidor DNS **Bind9*
 ## Paso 1: Actualización del sistema
 
 Antes de comenzar con la instalación, es fundamental asegurarse de que el sistema esté actualizado. Para ello, ejecuta los siguientes comandos:
-
 ![](imgs/Screenshot_1.png)
 
 Después de la actualización, es recomendable reiniciar el sistema:
-
-```bash
-sudo reboot
-```
+![](imgs/Screenshot_2.png)
 
 ## Paso 2: Instalación de Bind9
 
 Una vez que el sistema esté actualizado y reiniciado, procedemos a instalar **Bind9** junto con sus utilidades y documentación:
-
-```bash
-sudo apt-get install bind9 bind9utils bind9-doc
-```
+![](imgs/Screenshot_3.png)
 
 ## Paso 3: Configuración de Bind9
 
 Después de la instalación, es necesario configurar Bind9 para que funcione como un servidor de caché y reenviador. Edita el archivo de opciones de configuración:
-
-```bash
-sudo nano /etc/bind/named.conf.options
-```
+![](imgs/Screenshot_4.png)
 
 Dentro de este archivo, agrega la siguiente configuración:
-
-```bash
-acl goodclients {
-        RED Y MÁSCARA;
-        localhost;
-        localnets;
-};
-
-options {
-        directory "/var/cache/bind";
-        recursion yes;
-        allow-query { goodclients; };
-
-        forwarders {
-                8.8.8.8;
-                8.8.4.4;
-        };
-        forward only;
-
-        dnssec-validation yes;
-        auth-nxdomain no;    # conform to RFC1035
-        listen-on-v6 { any; };
-};
-```
+![](imgs/Screenshot_5.png)
+![](imgs/Screenshot_6.png)
 
 ### Explicación de la configuración:
 
@@ -64,29 +32,41 @@ options {
 ## Paso 4: Verificación de la configuración
 
 Antes de reiniciar el servicio, es importante verificar que la configuración no contenga errores:
-
-```bash
-sudo named-checkconf
-```
+![](imgs/Screenshot_7.png)
 
 Si el comando no devuelve ningún mensaje, significa que la configuración es correcta.
 
 ## Paso 5: Reinicio del servicio Bind9
 
 Para aplicar los cambios realizados, reinicia el servicio Bind9:
-
-```bash
-sudo systemctl restart bind9
-```
+![](imgs/Screenshot_8.png)
 
 ## Paso 6: Permitir el servicio en el firewall
 
 Si el firewall está habilitado en tu sistema, debes permitir el tráfico DNS:
+![](imgs/Screenshot_9.png)
+![](imgs/Screenshot_10.png)
 
-```bash
-sudo ufw allow Bind9
-```
+## Paso 7: Configurar los clientes para usar el servidor DNS
 
-Con estos pasos, habrás configurado correctamente el servidor **DNS Bind9** para que funcione como un servidor de caché y reenviador.
+Para que los clientes puedan usar el servidor DNS recién configurado, es necesario cambiar la configuración de red en cada cliente. 
+Edita el archivo de configuración de red en el cliente y cambia el servidor DNS al que acabamos de configurar:
+![](imgs/Screenshot_11.png)
+
+Agrega la siguiente línea, reemplazando `IP_DEL_SERVIDOR_DNS` por la dirección IP del servidor DNS:
+![](imgs/Screenshot_12.png)
+
+Guarda los cambios y cierra el archivo.
+
+## Paso 8: Comprobación del funcionamiento
+
+Para verificar que el servidor DNS funciona correctamente, podemos realizar una consulta de prueba usando el comando `nslookup` o `dig` desde un cliente configurado:
+![](imgs/Screenshot_13.png)
+
+Si el servidor DNS está funcionando correctamente, debería resolver el nombre de dominio y mostrar la dirección IP correspondiente.
+
+## Conclusión
+
+Con estos pasos, hemos instalado y configurado correctamente el servidor **DNS Bind9** como un servidor de caché y reenviador. Esto permite mejorar el rendimiento de la resolución de nombres en una red y optimizar la carga de las consultas DNS.
 
 **Nota**: Es importante asegurarse de que las direcciones IP y las configuraciones específicas se ajusten a las necesidades y al entorno de red de tu organización.
