@@ -1,7 +1,7 @@
 ![intro](imgs/intro.png)
 
 Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema tiene su propia carpeta con las actividades correspondientes.
-
+<br><br><br><br><br><br><br>
 ![tema0](imgs/tema0.png)
 
 | Ejercicio | Descripción  |
