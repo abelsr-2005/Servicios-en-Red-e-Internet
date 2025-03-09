@@ -2,7 +2,7 @@
 
 Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema tiene su propia carpeta con las actividades correspondientes.
 <div style="text-align: center;">
-![Tema 1 - Introducción](https://github.com/user-attachments/assets/dc5b0482-87da-4e5d-91c8-f2eae77570d7)
+![tema0](https://github.com/user-attachments/assets/e3e702d0-cd37-4da1-8cf6-d5b094059bc1)
 
 
 | Ejercicio | Descripción  |
