@@ -6,7 +6,7 @@ En esta práctica, aprenderemos a instalar y configurar el servidor DNS **Bind9*
 
 Antes de comenzar con la instalación, es fundamental asegurarse de que el sistema esté actualizado. Para ello, ejecuta los siguientes comandos:
 
-![](/imgs/Screenshot_1.png)
+![](imgs/Screenshot_1.png)
 
 Después de la actualización, es recomendable reiniciar el sistema:
 
