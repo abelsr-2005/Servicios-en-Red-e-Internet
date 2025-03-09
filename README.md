@@ -30,7 +30,6 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 
 | Ejercicio | Descripción  |
 |-------------|--------------|
-| [Ejercicio 0](Docker/Actividad0.MD) | Esta actividad sirve como primer acercamiento a Docker. Te proporciona enlaces y recursos esenciales para entender qué es Docker, cómo funcionan las imágenes, los contenedores y los volúmenes. Es una base teórica clave para las siguientes actividades 🚀 |
 | [Ejercicio 1](Docker/Docker-Activity-1.md) | Aquí aprenderás a instalar Docker en Fedora (aunque inicialmente se mencionaba Ubuntu, la actividad se actualizó). Se detallan los pasos necesarios para preparar el repositorio, instalar el motor de Docker y comprobar que funciona correctamente con un contenedor de prueba. 🚀 |
 | [Ejercicio 2](Docker/Docker-Activity-2.md) | En esta práctica te familiarizarás con los comandos esenciales para ejecutar contenedores, listar imágenes y visualizar contenedores en ejecución o detenidos. Además, aprenderás a crear tu propia imagen Docker partiendo de un Dockerfile. 🚀 |
 | [Ejercicio 3](Docker/Docker-Activity-3.md) | Este ejercicio está enfocado en la gestión de imágenes y contenedores. Aprenderás a descargar imágenes, ejecutarlas, asignar nombres personalizados a los contenedores, detenerlos y eliminarlos, y realizar una limpieza general de tu entorno Docker. 🚀 |
