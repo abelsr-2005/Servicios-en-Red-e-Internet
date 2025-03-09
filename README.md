@@ -16,19 +16,14 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 |-------------|--------------|
 | [Ejercicio ](Tema1/Práctica2.MD)| Instalación y configuración de Apache con WordPress y una aplicación en Python mediante virtual hosts. 🚀 |
 
-## Tema 3
 
-| Ejercicio | Descripción  |
-|-------------|--------------|
-| [Ejercicio 1](Tema3/Readme.MD) | Implementación de una VPC y despliegue de instancias EC2 con Apache y PHP 🚀 |
-
-## AWS
+## Tema 3 - AWS
 
 | Ejercicio | Descripción  |
 |-------------|--------------|
 | [Ejercicio 1](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/README.md) | Configuración de EC2, RDS y EFS para una arquitectura escalable y altamente disponible. 🚀 |
 
-## Docker
+## Tema 4 - Docker
 
 | Ejercicio | Descripción  |
 |-------------|--------------|
