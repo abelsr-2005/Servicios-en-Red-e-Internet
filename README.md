@@ -16,6 +16,12 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 |-------------|--------------|
 | [Ejercicio ](Tema1/Práctica2.MD)| Instalación y configuración de Apache con WordPress y una aplicación en Python mediante virtual hosts. 🚀 |
 
+![tema2](imgs/2.png)
+
+| Ejercicio | Descripción  |
+|-------------|--------------|
+| [Ejercicio ](Tema2/Readme.MD)| Instalación y configuración de Bind9 como servidor DNS caché y reenviador en Ubuntu. Incluye la actualización del sistema, instalación de Bind9, configuración de opciones y ACL, verificación de errores, reinicio del servicio y ajustes en el firewall para permitir el tráfico DNS. 🚀 |
+
 
 ![tema3](imgs/3.png)
 
