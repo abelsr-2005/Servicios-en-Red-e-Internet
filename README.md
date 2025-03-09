@@ -2,7 +2,7 @@
 
 Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema tiene su propia carpeta con las actividades correspondientes.
 
-[![tema0](imgs/tema0.png)]
+[![tema0](imgs/tema0.png)
 
 | Ejercicio | Descripción  |
 |-------------|--------------|
@@ -10,20 +10,20 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 </div>
 
 
-[![tema1](imgs/1.png)]
+[![tema1](imgs/1.png)
 
 | Ejercicio | Descripción  |
 |-------------|--------------|
 | [Ejercicio ](Tema1/Práctica2.MD)| Instalación y configuración de Apache con WordPress y una aplicación en Python mediante virtual hosts. 🚀 |
 
 
-[![tema3](imgs/3.png)]
+[![tema3](imgs/3.png)
 
 | Ejercicio | Descripción  |
 |-------------|--------------|
 | [Ejercicio 1](https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/AWS/README.md) | Configuración de EC2, RDS y EFS para una arquitectura escalable y altamente disponible. 🚀 |
 
-[![tema4](imgs/4.png)]
+[![tema4](imgs/4.png)
 
 | Ejercicio | Descripción  |
 |-------------|--------------|
