@@ -1,4 +1,4 @@
-# Servicios en red e internet
+![intro](imgs/intro.png)
 
 Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema tiene su propia carpeta con las actividades correspondientes.
 
