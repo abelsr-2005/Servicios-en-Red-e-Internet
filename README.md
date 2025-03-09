@@ -20,7 +20,7 @@ Este repositorio contiene las soluciones a los ejercicios del módulo. Cada tema
 
 | Ejercicio | Descripción  |
 |-------------|--------------|
-| [Ejercicio ](Tema2/Readme.MD)| Instalación y configuración de Bind9 como servidor DNS caché y reenviador en Ubuntu. Incluye la actualización del sistema, instalación de Bind9, configuración de opciones y ACL, verificación de errores, reinicio del servicio y ajustes en el firewall para permitir el tráfico DNS. 🚀 |
+| [Ejercicio ]((https://github.com/abelsr-2005/Servicios-en-Red-e-Internet/blob/main/tema2/Readme.MD))| Instalación y configuración de Bind9 como servidor DNS caché y reenviador en Ubuntu. Incluye la actualización del sistema, instalación de Bind9, configuración de opciones y ACL, verificación de errores, reinicio del servicio y ajustes en el firewall para permitir el tráfico DNS. 🚀 |
 
 
 ![tema3](imgs/3.png)
